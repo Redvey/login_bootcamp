@@ -5,51 +5,54 @@ class loginBoxes extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      children: [
-        Row(
-          children: [
-            Container(
-              height: 40,
-              width: 150,
-              decoration: BoxDecoration(
-                color: Color(0xFF393B45),
-                borderRadius: BorderRadius.circular(12)
-              ),
-            ),
-            SizedBox( width: 15,),
-            Container(
-              height: 40,
-              width: 150,
-              decoration: BoxDecoration(
+    return Padding(
+      padding: const EdgeInsets.all(30.0),
+      child: Column(
+       crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Container(
+                height: 40,
+                width: 150,
+                decoration: BoxDecoration(
                   color: Color(0xFF393B45),
                   borderRadius: BorderRadius.circular(12)
+                ),
               ),
-            ),
-          ],
-
-        ),
-        SizedBox( height: 15,),
-        Container(
-        height: 40,
-        width: 450,
-        decoration: BoxDecoration(
+              SizedBox( width: 15,),
+              Container(
+                height: 50,
+                width: 200,
+                decoration: BoxDecoration(
                     color: Color(0xFF393B45),
                     borderRadius: BorderRadius.circular(12)
+                ),
+              ),
+            ],
 
-        ),),
-        SizedBox( height: 15,),
-        Container(
+          ),
+          SizedBox( height: 15,),
+          Container(
           height: 40,
           width: 450,
           decoration: BoxDecoration(
-              color: Color(0xFF393B45),
-              borderRadius: BorderRadius.circular(12)
+                      color: Color(0xFF393B45),
+                      borderRadius: BorderRadius.circular(12)
 
           ),),
+          SizedBox( height: 15,),
+          Container(
+            height: 40,
+            width: 450,
+            decoration: BoxDecoration(
+                color: Color(0xFF393B45),
+                borderRadius: BorderRadius.circular(12)
 
-      ],
+            ),),
+
+        ],
+      ),
     );
   }
 }
